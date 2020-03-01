@@ -2,6 +2,7 @@ const dataSource = {}; // eslint-disable-line no-unused-vars
 
 dataSource.products = {
   cake: {
+    id: 'cake',
     class: 'small',
     name: 'Zio Stefano\'s Doughnut',
     price: 9,
@@ -11,6 +12,7 @@ dataSource.products = {
     ],
   },
   breakfast: {
+    id: 'breakfast',
     class: 'small',
     name: 'Zia Giulia\'s Breakfast',
     price: 9,
@@ -32,6 +34,7 @@ dataSource.products = {
     },
   },
   pizza: {
+    id: 'pizza',
     name: 'Nonna Alba\'s Pizza',
     price: 20,
     description: 'The true taste of Italy &ndash; homemade pizza as prepared by our grandmothers in old-fashoned brick ovens. Choose your favorite topping and enjoy your comfort food! All ingredients come straight from eco-friendly, trusted farms in the Italian countryside.',
@@ -56,6 +59,7 @@ dataSource.products = {
         },
       },
       toppings: {
+        id: 'toppings',
         label: 'Toppings',
         type: 'checkboxes',
         options: {
@@ -68,6 +72,7 @@ dataSource.products = {
         },
       },
       crust: {
+        id: 'crust',
         label: 'pizza crust',
         type: 'select',
         options: {
@@ -82,6 +87,7 @@ dataSource.products = {
     },
   },
   salad: {
+    id: 'salad',
     name: 'Nonno Alberto\'s Salad',
     price: 9,
     description: 'A delicious salad made of fresh, home-grown products on a crispy lettuce base.',
