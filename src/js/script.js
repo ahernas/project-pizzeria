@@ -90,7 +90,6 @@
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
       thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
-      console.log(thisProduct.imageWrapper);
 
     }
 
@@ -192,7 +191,7 @@
               selectedImage.classList.remove(classNames.menuProduct.imageVisible);
             }
           }
-          
+
         /* END LOOP: for each optionId in param.options */
         }
 
