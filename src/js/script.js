@@ -89,6 +89,8 @@
       thisProduct.formInputs = thisProduct.form.querySelectorAll(select.all.formInputs);
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
+      thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
+      console.log(thisProduct.imageWrapper);
 
     }
 
@@ -182,6 +184,15 @@
           /* END ELSE IF: if option is not selected and option is default */
           }
 
+          const selectedImage = thisProduct.imageWrapper.querySelector('.'+paramId + '-' + optionId);
+          if (selectedImage) {
+            if (optionSelected) {
+              selectedImage.classList.add(classNames.menuProduct.imageVisible);
+            } else {
+              selectedImage.classList.remove(classNames.menuProduct.imageVisible);
+            }
+          }
+          
         /* END LOOP: for each optionId in param.options */
         }
 
