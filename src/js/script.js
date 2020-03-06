@@ -249,7 +249,6 @@
         thisWidget.value =newValue;
         thisWidget.announce ();
       }
-
       thisWidget.input.value = thisWidget.value;
 
     }
@@ -257,8 +256,8 @@
     initActions () {
       const thisWidget = this;
 
-      thisWidget.input.addEventListener ('change', function(event) {
-        thisWidget.setValue (value);
+      thisWidget.input.addEventListener ('change', function (event) {
+        thisWidget.setValue (event.target.value);
       });
 
       thisWidget.linkDecrease.addEventListener ('click', function (event) {
