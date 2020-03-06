@@ -101,7 +101,7 @@
 
       /* START: click event listener to trigger */
       clickedElement.addEventListener('click', function() {
-      console.log('clicked');
+        console.log('clicked');
 
         /* prevent default action for event */
         event.preventDefault();
@@ -121,9 +121,9 @@
             activeProduct.classList.remove('active');
 
           /* END: if the active product isn't the element of thisProduct */
-           }
+          }
         /* END LOOP: for each active product */
-         }
+        }
       /* END: click event listener to trigger */
       });
     }
@@ -142,7 +142,7 @@
         });
       }
 
-       thisProduct.cartButton.addEventListener ('click', function (event) {
+      thisProduct.cartButton.addEventListener ('click', function (event) {
         event.preventDefault ();
         thisProduct.processOrder ();
       });
@@ -202,7 +202,7 @@
       thisProduct.priceElem.innerHTML = price;
     }
 
-   }
+  }
 
   const app = {
     initMenu: function () {
@@ -210,8 +210,8 @@
       console.log('thisApp.data:', thisApp.data);
 
       for (let productData in thisApp.data.products) {
-      console.log(productData);
-      console.log(thisApp.data.products[productData])
+        console.log(productData);
+        console.log(thisApp.data.products[productData]);
         new Product (productData, thisApp.data.products[productData]);
       }
 
