@@ -103,7 +103,6 @@
 
       /* START: click event listener to trigger */
       clickedElement.addEventListener('click', function() {
-        //console.log('clicked');
 
         /* prevent default action for event */
         event.preventDefault();
@@ -137,7 +136,7 @@
         thisProduct.processOrder ();
       });
 
-      for(let input of thisProduct.formInputs) {
+      for (let input of thisProduct.formInputs) {
         input.addEventListener ('change', function () {
           thisProduct.processOrder ();
         });
@@ -293,9 +292,8 @@
         new Product (productData, thisApp.data.products[productData]);
       }
 
-      //console.log('thisApp.data:', thisApp.data);
       //const testProduct = new Product ();
-      //console.log('testProduct:', testProduct);
+
     },
 
 
