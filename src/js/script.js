@@ -372,7 +372,7 @@
 
       thisCart.dom.productList.addEventListener('updated', function () {
         thisCart.update();
-      })
+      });
     }
 
     add (menuProduct) {
@@ -450,7 +450,7 @@
       const thisCartProduct = this;
 
       thisCartProduct.amountWidget = new AmountWidget (thisCartProduct.dom.amountWidget);
-      
+
       thisCartProduct.dom.amountWidget.addEventListener ('updated', function (event) {
         console.log('hej', thisCartProduct.amountWidget);
         thisCartProduct.amount = thisCartProduct.amountWidget.value;
