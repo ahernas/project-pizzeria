@@ -97,7 +97,6 @@
       thisProduct.initAmountWidget ();
       thisProduct.processOrder ();
 
-      console.log('new Product:', thisProduct);
     }
 
     renderInMenu () {
@@ -246,7 +245,6 @@
       /* set the contents of thisProduct.priceElem to be the value of variable price */
       thisProduct.priceElem.innerHTML = thisProduct.price;
 
-      console.log(thisProduct.params);
     }
 
     initAmountWidget () {
@@ -276,11 +274,8 @@
 
       thisWidget.getElements (element);
       thisWidget.value = settings.amountWidget.defaultValue;
-      thisWidget.setValue (thisWidget.input.value);
+      thisWidget.setValue(thisWidget.input.value);
       thisWidget.initActions ();
-
-      console.log ('AmountWidget: ', thisWidget);
-      console.log ('constructor arguments: ', element);
     }
 
     getElements (element) {
@@ -345,8 +340,6 @@
       thisCart.getElements (element);
       thisCart.initActions ();
 
-
-      console.log ('new cart: ', thisCart);
     }
 
     getElements (element) {
@@ -357,7 +350,6 @@
       thisCart.dom.wrapper = element;
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
       thisCart.dom.productList = thisCart.dom.wrapper.querySelector(select.cart.productList);
-      //console.log('hej: ', thisCart.dom.productList);
 
     }
 
@@ -376,7 +368,6 @@
       const generatedDOM = utils.createDOMFromHTML (generatedHTML);
       thisCart.dom.productList.appendChild (generatedDOM);
 
-      console.log ('adding product: ', menuProduct);
     }
 
   }
@@ -402,11 +393,6 @@
 
     init: function(){
       const thisApp = this;
-      console.log('*** App starting ***');
-      console.log('thisApp:', thisApp);
-      console.log('classNames:', classNames);
-      console.log('settings:', settings);
-      console.log('templates:', templates);
 
       thisApp.initData ();
       thisApp.initMenu ();
