@@ -1,4 +1,4 @@
-/* global Handlebars, utils, dataSource */
+/* global Handlebars, utils */
 /* eslint-disable no-unused-vars */
 
 {
