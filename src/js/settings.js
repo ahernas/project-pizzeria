@@ -1,3 +1,5 @@
+/* global Handlebars */
+
 export const select = {
   templateOf: {
     menuProduct: '#template-menu-product',
@@ -27,7 +29,6 @@ export const select = {
       linkIncrease: 'a[href="#more"]',
     },
   },
-
   cart: {
     productList: '.cart__order-summary',
     toggleTrigger: '.cart__summary',
@@ -46,7 +47,6 @@ export const select = {
     edit: '[href="#edit"]',
     remove: '[href="#remove"]',
   },
-
 };
 
 export const classNames = {
@@ -54,7 +54,6 @@ export const classNames = {
     wrapperActive: 'active',
     imageVisible: 'active',
   },
-
   cart: {
     wrapperActive: 'active',
   },
@@ -66,11 +65,9 @@ export const settings = {
     defaultMin: 1,
     defaultMax: 9,
   },
-
   cart: {
     defaultDeliveryFee: 20,
   },
-
   db: {
     url: '//localhost:3131',
     product: 'product',
