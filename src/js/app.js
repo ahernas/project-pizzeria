@@ -1,4 +1,4 @@
-import {settings, select} from './settings.js';
+import {select, settings} from './settings.js';
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 
@@ -32,6 +32,9 @@ const app = {
 
         /* execute initMenu method */
         thisApp.initMenu();
+      })
+      .catch((error) => {
+        console.log('CONNECTION ERROR', error);
       });
   },
 
@@ -48,7 +51,7 @@ const app = {
     thisApp.cart = new Cart(cartElem);
 
     thisApp.productList = document.querySelector(select.containerOf.menu);
-    thisApp.productList.addEventListener('add-to-cart', function(event) {
+    thisApp.productList.addEventListener('add-to-cart', function (event) {
       app.cart.add(event.detail.product);
     });
   },
