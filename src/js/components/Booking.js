@@ -26,12 +26,10 @@ class Booking {
 
   initWidgets() {
     const thisBooking = this;
-    thisBooking.peopleAmount = new AmountWidget (thisBooking.dom.peopleAmount);
-    thisBooking.hoursAmount =  new AmountWidget (thisBooking.dom.hoursAmount);
+    thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
+    thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
   }
 }
-
-
 
 export default Booking;
 
