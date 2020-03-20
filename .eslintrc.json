@@ -3,6 +3,10 @@
     "browser": true,
     "es6": true
   },
+  "globals": {
+    "flatpickr": true,
+    "rangeSlider": true
+  },
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 2015,
