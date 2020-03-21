@@ -206,7 +206,7 @@
   "event": [
     {
       "id": 1,
-      "date": "2019-01-01",
+      "date": "2020-03-29",
       "hour": "12:30",
       "table": 1,
       "repeat": false,
@@ -222,7 +222,10 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["bread", "lemonWater"]
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
     },
     {
       "id": 3,
@@ -232,7 +235,10 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["bread", "lemonWater"]
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
     },
     {
       "id": 4,
@@ -252,8 +258,11 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["lemonWater"]
+      "starters": [
+        "lemonWater"
+      ]
     }
   ],
-  "booking": []
+  "booking": {
+  }
 }
