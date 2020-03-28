@@ -264,5 +264,32 @@
     }
   ],
   "booking": [
-  ]
+  ],
+  "home": {
+    "quotes": [
+      {
+        "title-quotes": "Amazing service",
+        "text-quotes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "author-quotes": "Margaret Osborne"
+      },
+      {
+        "title-quotes": "Delicious foods",
+        "text-quotes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "author-quotes": "Michael Niece"
+      },
+      {
+        "title-quotes": "Beautiful place",
+        "text-quotes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.",
+        "author-quotes": "Philippe Town"
+      }
+    ],
+    "images": [
+      "<img src=\"https://i.postimg.cc/CLpPGFK1/pizza-4.jpg\">",
+      "<img src=\"https://i.postimg.cc/wTFX1Hyn/pizza-5.jpg\">",
+      "<img src=\"https://i.postimg.cc/QdHTV7rW/pizza-6.jpg\">",
+      "<img src=\"https://i.postimg.cc/qvhNpd8s/pizza-7.jpg\">",
+      "<img src=\"https://i.postimg.cc/W4c1jqpV/pizza-8.jpg\">",
+      "<img src=\"https://i.postimg.cc/GhZcJTyD/pizza-9.jpg\">"
+    ]
+  }
 }

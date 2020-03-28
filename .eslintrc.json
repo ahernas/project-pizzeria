@@ -5,7 +5,8 @@
   },
   "globals": {
     "flatpickr": true,
-    "rangeSlider": true
+    "rangeSlider": true,
+    "$": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
