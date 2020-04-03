@@ -5,7 +5,13 @@ class BaseWidget {
     thisWidget.dom = {};
     thisWidget.dom.wrapper = wrapperElement;
 
-    thisWidget.correctValue = initialValue;
+    const correctValue = parseInt(wrapperElement.querySelector('input').value, 10);
+
+    if (correctValue > initialValue) {
+      thisWidget.correctValue = correctValue;
+    } else {
+      thisWidget.correctValue = initialValue;
+    }
   }
 
   get value() {
